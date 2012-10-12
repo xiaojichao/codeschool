@@ -1,6 +1,6 @@
 = form_for @challenge, url: path do |f|
   = f.label 'Title'
-  = f.text_field :title
+  .input.string= f.text_field :title
   = f.label 'Task'
   = f.text_area :task
   = f.label 'Additional information'
@@ -9,4 +9,4 @@
   = f.text_area :console
   = f.label 'Verification code'
   = f.text_area :verification_code
-  = f.submit value
+  .buttons= f.submit value
