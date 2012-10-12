@@ -14,8 +14,11 @@ class Challenge < ActiveRecord::Base
     :console,
     :verification_code
 
-  validates :title, :task, :additional_information, :console, :verification_code,
+  validates :title, :task, :additional_information, :console, :verification_code, :course_id,
     presence: true
 
   belongs_to :course
+  has_many :answers
+
+  delegate :title, to: :course, prefix: true
 end
