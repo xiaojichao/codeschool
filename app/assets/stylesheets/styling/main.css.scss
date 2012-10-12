@@ -8,6 +8,7 @@ body {
 	text-align: center;
 	color: #333;
 	font-size: 13px;
+	position: relative;
 }
 a { 
 	color: #0088d2;
@@ -17,13 +18,13 @@ a {
 }
 
 .view {
-	background: #fcfcfc;
-	border: 1px solid #f7f8fa;
-	border-width: 8px 1px 1px 1px;
-	@include linear-gradient(top, #fcfcfe 77%, #f3f4f7 100%);
+	background: url('/assets/desk.png') 0 0 repeat #ccc;
+	border: 12px solid #412624;
+	@include box-shadow(0 0 3px rgba(0, 0, 0, 1) inset);
 	margin: 30px 0;
 	padding: 10px 30px 30px;
 	text-align: left;
+	color: #fff;
 	@extend .drop-shadow;
 	@extend .curved;
 	h1 {
