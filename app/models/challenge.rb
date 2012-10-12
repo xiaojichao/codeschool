@@ -10,10 +10,11 @@ class Challenge < ActiveRecord::Base
 
   attr_accessible :title,
     :task,
+    :console,
     :additional_information,
     :verification_code
 
-  validates :title, :task, :additional_information, :console, :verification_code, :course_id,
+  validates :title, :task, :additional_information, :verification_code, :course_id,
     presence: true
 
   belongs_to :course
