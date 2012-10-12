@@ -8,7 +8,7 @@ def sign_in_with(email, password)
 end
 
 Given /^I exist as a user with not comfirmed email$/ do
-  @current_user = Factory.create :not_confirmed_user
+  @current_user = FactoryGirl.create :not_confirmed_user
 end
 
 When /^I sign in with valid credentials$/ do
