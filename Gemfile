@@ -25,6 +25,7 @@ gem 'kaminari'
 gem 'slim'
 gem 'mini_record'
 gem 'mysql2'
+gem 'decent_exposure'
 
 group :development do
   gem 'heroku'

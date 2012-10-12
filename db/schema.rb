@@ -27,7 +27,9 @@ ActiveRecord::Schema.define(:version => 0) do
   add_index "challenges", ["course_id"], :name => "index_challenges_on_course_id"
 
   create_table "courses", :force => true do |t|
-    t.string "title", :null => false
+    t.string   "title",      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
