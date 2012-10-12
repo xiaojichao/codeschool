@@ -29,10 +29,8 @@ course.challenges.create do |challenge|
   MARKDOWN
 
   challenge.console = <<-MARKDOWN
-  ```ruby
   class User < ActiveRecord::Base
   end
-  ```
   MARKDOWN
 
   challenge.verification_code = <<-MARKDOWN
