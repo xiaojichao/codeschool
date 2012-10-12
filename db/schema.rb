@@ -13,6 +13,19 @@
 
 ActiveRecord::Schema.define(:version => 0) do
 
+  create_table "challenges", :force => true do |t|
+    t.string   "title"
+    t.text     "task"
+    t.text     "additional_information"
+    t.text     "console"
+    t.text     "verification_code"
+    t.integer  "course_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "challenges", ["course_id"], :name => "index_challenges_on_course_id"
+
   create_table "courses", :force => true do |t|
     t.string "title", :null => false
   end
