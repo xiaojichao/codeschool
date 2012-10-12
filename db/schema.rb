@@ -13,6 +13,15 @@
 
 ActiveRecord::Schema.define(:version => 0) do
 
+  create_table "answers", :force => true do |t|
+    t.string  "cmd"
+    t.integer "user_id"
+    t.integer "challenge_id"
+  end
+
+  add_index "answers", ["challenge_id"], :name => "index_answers_on_challenge_id"
+  add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
   create_table "challenges", :force => true do |t|
     t.string   "title"
     t.text     "task"
@@ -27,7 +36,9 @@ ActiveRecord::Schema.define(:version => 0) do
   add_index "challenges", ["course_id"], :name => "index_challenges_on_course_id"
 
   create_table "courses", :force => true do |t|
-    t.string "title", :null => false
+    t.string   "title",      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
