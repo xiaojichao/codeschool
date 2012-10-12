@@ -1,5 +1,7 @@
 CodeSchool::Application.routes.draw do
-  devise_for :users
+  devise_for :users do
+    root to: "devise/sessions#new"
+  end
 
   namespace 'admin' do
     resources :courses do
@@ -18,6 +20,4 @@ CodeSchool::Application.routes.draw do
   authenticated :user do
     root to: 'courses#index'
   end
-
-  root to: 'dashboard#index'
 end
