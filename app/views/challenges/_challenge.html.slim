@@ -5,5 +5,11 @@ h3 Additional information
 = markdown(challenge.additional_information)
 
 = simple_form_for :answer, url: challenge_answers_path(challenge) do |form|
-  = form.input :cmd, as: :text, input_html: { value: challenge.console }
   = form.submit 'Submit'
+
+  = form.input :cmd,
+    as: :hidden,
+    input_html: { value: challenge.console, class: 'editable' }
+
+  #editor
+    = markdown(challenge.console)
