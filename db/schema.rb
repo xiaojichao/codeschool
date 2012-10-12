@@ -13,6 +13,15 @@
 
 ActiveRecord::Schema.define(:version => 0) do
 
+  create_table "answers", :force => true do |t|
+    t.string  "cmd"
+    t.integer "user_id"
+    t.integer "challenge_id"
+  end
+
+  add_index "answers", ["challenge_id"], :name => "index_answers_on_challenge_id"
+  add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
   create_table "challenges", :force => true do |t|
     t.string   "title"
     t.text     "task"

@@ -1,0 +1,9 @@
+h3 Task
+= markdown(challenge.task)
+
+h3 Additional information
+= markdown(challenge.additional_information)
+
+= simple_form_for :answer, url: challenge_answers_path(challenge) do |form|
+  = form.input :cmd, value: challenge.console, as: :text
+  = form.submit 'Submit'
