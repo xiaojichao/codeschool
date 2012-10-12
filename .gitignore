@@ -1,0 +1,13 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/*
+coverage/*
+rerun.txt
+config/database.yml
+doc/**/*
+vendor/ruby
+vendor/cache
+bin
+.sass-cache
+._*
