@@ -58,3 +58,7 @@ group :test do
 
   gem 'ruby-debug19'
 end
+
+group :staging, :production do
+  gem 'pg'
+end
