@@ -11,7 +11,6 @@ class Challenge < ActiveRecord::Base
   attr_accessible :title,
     :task,
     :additional_information,
-    :console,
     :verification_code
 
   validates :title, :task, :additional_information, :console, :verification_code, :course_id,

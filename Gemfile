@@ -27,6 +27,9 @@ gem 'mini_record'
 gem 'mysql2'
 gem 'decent_exposure'
 
+gem 'redcarpet'
+gem 'pygmentize'
+
 group :development do
   gem 'heroku'
   gem 'rails_best_practices'
