@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                                  :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                                      :null => false
+    t.string   "encrypted_password",     :default => "",     :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -56,7 +56,8 @@ ActiveRecord::Schema.define(:version => 0) do
     t.string   "authentication_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
-    t.string   "full_name",                              :null => false
+    t.string   "role",                   :default => "user", :null => false
+    t.string   "full_name",                                  :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,4 @@
+- title 'Users'
+.view
+  - @users.each do |user|
+    = content_tag :h2, user.full_name

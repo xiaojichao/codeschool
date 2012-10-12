@@ -1,0 +1,3 @@
+- title "Edit #{@challenge.title}"
+.view
+  = render partial: 'form', locals: { value: 'Update', path: admin_course_challenge_path(@course, @challenge) }
