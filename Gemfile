@@ -24,7 +24,6 @@ gem 'inherited_resources'
 gem 'kaminari'
 gem 'slim'
 gem 'mini_record'
-gem 'mysql2'
 gem 'decent_exposure'
 
 gem 'redcarpet'
@@ -36,6 +35,7 @@ group :development do
   gem 'brakeman'
   gem 'rails3-generators'
   gem 'slim-rails'
+  gem 'mysql2'
 end
 
 group :development, :test do
