@@ -141,11 +141,13 @@ GEM
     mail_safe (0.3.1)
       actionmailer (>= 1.3.6)
     mime-types (1.19)
+    mini_record (0.3.1)
+      activerecord (>= 3.2.0)
     multi_json (1.3.6)
+    mysql2 (0.3.11)
     netrc (0.7.7)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
-    pg (0.14.1)
     polyglot (0.3.3)
     progressbar (0.11.0)
     rack (1.4.1)
@@ -251,7 +253,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.6)
     styleguides (0.1)
     tabletastic (0.2.3)
       activesupport (~> 3.0)
@@ -295,7 +296,8 @@ DEPENDENCIES
   kaminari
   launchy
   mail_safe
-  pg
+  mini_record
+  mysql2
   rails
   rails3-generators
   rails_best_practices
@@ -309,7 +311,6 @@ DEPENDENCIES
   simplecov
   slim
   slim-rails
-  sqlite3
   styleguides
   tabletastic
   uglifier (>= 1.0.3)

@@ -23,7 +23,8 @@ gem 'tabletastic'
 gem 'inherited_resources'
 gem 'kaminari'
 gem 'slim'
-
+gem 'mini_record'
+gem 'mysql2'
 
 group :development do
   gem 'heroku'
@@ -34,7 +35,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'mail_safe'
 end
@@ -53,8 +53,4 @@ group :test do
   gem 'launchy'
 
   gem 'ruby-debug19'
-end
-
-group :staging, :production do
-  gem 'pg'
 end

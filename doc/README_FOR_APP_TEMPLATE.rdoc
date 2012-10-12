@@ -2,3 +2,4 @@
 
 1. bundle install --path vendor
 2. cp config/database.yml.example config/database.yml
+3. bundle exec rake db:auto_upgrade
