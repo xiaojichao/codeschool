@@ -18,5 +18,5 @@ CodeSchool::Application.routes.draw do
     root to: 'courses#index'
   end
 
-  root to: 'courses#index'
+  root to: 'dashboard#index'
 end
