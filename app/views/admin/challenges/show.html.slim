@@ -2,7 +2,7 @@
 = link_to 'edit', edit_admin_course_challenge_path(@course, @challenge), class: "button fixed"
 .view
   = content_tag :p, @challenge.title
-  = content_tag :p, @challenge.task
-  = content_tag :p, @challenge.additional_information
+  = content_tag :p, markdown(@challenge.task)
+  = content_tag :p, markdown(@challenge.additional_information)
   = content_tag :p, @challenge.console
   = content_tag :p, @challenge.verification_code
