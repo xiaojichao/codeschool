@@ -2,7 +2,7 @@ html {
 	height: 100%;
 }
 body {
-	background: $body_color;
+	background: url('/assets/fs_online.jpg') center top no-repeat $body_color;
 	font-family: $helvetica;
 	height: 100%;
 	text-align: center;
@@ -15,13 +15,6 @@ a {
 		color: #036;
 	}
 }
-.main-layout {
-		@include linear-gradient(top, darken($body_color, 8%) 12%, $body_color 38%);
-}
-:hover {
-	@include transition (all, 0.5s);
-}
-
 
 .view {
 	background: #fcfcfc;
