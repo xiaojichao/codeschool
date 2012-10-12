@@ -5,5 +5,5 @@ h3 Additional information
 = markdown(challenge.additional_information)
 
 = simple_form_for :answer, url: challenge_answers_path(challenge) do |form|
-  = form.input :cmd, value: challenge.console, as: :text
+  = form.input :cmd, as: :text, input_html: { value: challenge.console }
   = form.submit 'Submit'

@@ -36,8 +36,6 @@ course.challenges.create do |challenge|
   MARKDOWN
 
   challenge.verification_code = <<-MARKDOWN
-  ```ruby
     User.longest_name.should == 'Vladimir'
-  ```
   MARKDOWN
 end
