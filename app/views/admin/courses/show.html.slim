@@ -1,0 +1,8 @@
+- title @course.title
+
+p = link_to 'New Challenge', new_admin_course_challenge_path(@course)
+
+p Challenges
+
+- @challenges.each do |challenge|
+  = content_tag :div, link_to(challenge.title, admin_course_challenge_path(@course, challenge))

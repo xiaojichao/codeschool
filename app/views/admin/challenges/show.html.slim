@@ -1,0 +1,9 @@
+- title @challenge.title
+
+= link_to 'edit', edit_admin_course_challenge_path(@course, @challenge)
+p
+= content_tag :div, @challenge.title
+= content_tag :div, @challenge.task
+= content_tag :div, @challenge.additional_information
+= content_tag :div, @challenge.console
+= content_tag :div, @challenge.verification_code

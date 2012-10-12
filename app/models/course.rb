@@ -6,5 +6,5 @@ class Course < ActiveRecord::Base
 
   validates :title, presence: true
 
-  has_many :challenges
+  has_many :challenges, dependent: :destroy
 end

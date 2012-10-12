@@ -1,0 +1,6 @@
+- title 'New Course'
+
+= form_for @course, url: admin_courses_path do |f|
+  = f.label 'Title'
+  = f.text_field 'title'
+  = f.submit 'Create'

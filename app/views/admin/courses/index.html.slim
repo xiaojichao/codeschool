@@ -1,0 +1,6 @@
+- title 'Courses'
+
+= link_to 'New Course', new_admin_course_path
+p
+- @courses.each do |course|
+  = content_tag :div, link_to(course.title, admin_course_path(course))

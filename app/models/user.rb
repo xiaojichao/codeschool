@@ -25,6 +25,8 @@ class User < ActiveRecord::Base
 
   timestamps
 
+  scope :no_admin, where(role: 'user')
+
   attr_accessible :full_name, :email, :password, :password_confirmation, :remember_me
   validates :full_name, presence: true
 
