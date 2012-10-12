@@ -1,4 +1,4 @@
 - title 'Users'
-
-- @users.each do |user|
-  = content_tag :div, user.full_name
+.view
+  - @users.each do |user|
+    = content_tag :h2, user.full_name

@@ -1,6 +1,5 @@
 - title 'Courses'
 = link_to 'New Course', new_admin_course_path, class: "button fixed"
 .view
-  p
   - @courses.each do |course|
     = content_tag :h2, link_to(course.title, admin_course_path(course))

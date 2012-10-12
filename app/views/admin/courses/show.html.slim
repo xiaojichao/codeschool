@@ -6,4 +6,4 @@
   h2 Challenges
 
   - @challenges.each do |challenge|
-    = content_tag :div, link_to(challenge.title, admin_course_challenge_path(@course, challenge))
+    = content_tag :h2, link_to(challenge.title, admin_course_challenge_path(@course, challenge))
